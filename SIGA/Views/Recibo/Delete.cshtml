@@ -1,0 +1,63 @@
+﻿@model SIGA_Model.Recibo
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar <small>Recibo</small></h2>
+
+<h3>Estas seguro que quieres eliminar el Recibo?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaRegistro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.Raw("Alumno")
+        </dt>
+
+        <dd>
+            @Html.Raw(ViewBag.AlumnoNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Curso.CurName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Curso.CurName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modulo.ModNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modulo.ModNombre)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar a la Lista", "Index")
+        </div>
+    }
+</div>

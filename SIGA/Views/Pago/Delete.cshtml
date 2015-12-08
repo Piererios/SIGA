@@ -1,0 +1,63 @@
+﻿@model SIGA_Model.Pago
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar <small>Pago</small></h2>
+
+<h3>Estas seguro que deseas eliminar este pago?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PagoFecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PagoFecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PagoDescuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PagoDescuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PagoMonto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PagoMonto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

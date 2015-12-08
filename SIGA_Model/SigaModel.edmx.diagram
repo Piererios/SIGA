@@ -4,30 +4,31 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e8a1ec5dce3043bda90a4171049107fd" Name="Diagram1">
-        <EntityTypeShape EntityType="SIGAModel.Administrador" Width="1.5" PointX="3" PointY="34" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Alumno" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Aula" Width="1.5" PointX="3" PointY="27.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Calificacion" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Curso" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Horario" Width="1.5" PointX="3" PointY="29.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Matricula" Width="1.5" PointX="8.25" PointY="8" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Modulo" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.ModuloCategoria" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.ModuloCurso" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.ModuloNivel" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Pago" Width="1.5" PointX="3.75" PointY="20" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Persona" Width="1.5" PointX="1.5" PointY="20.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Profesor" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Programa" Width="1.5" PointX="5.25" PointY="13" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Recibo" Width="1.5" PointX="6" PointY="19.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.TipoUsuario" Width="1.5" PointX="1.5" PointY="24.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGAModel.Usuario" Width="1.5" PointX="0.75" PointY="15.5" IsExpanded="true" />
+      <Diagram DiagramId="f40178d077314e2bbe59fd8dc1eabc9d" Name="Diagram1">
+        <EntityTypeShape EntityType="SIGAModel.Administrador" Width="1.5" PointX="6" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Alumno" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Aula" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Calificacion" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Curso" Width="1.5" PointX="6" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Horario" Width="1.5" PointX="3" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Matricula" Width="1.5" PointX="8.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Modulo" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.ModuloCategoria" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.ModuloCurso" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.ModuloNivel" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Pago" Width="1.5" PointX="10.5" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Persona" Width="1.5" PointX="1.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Profesor" Width="1.5" PointX="3" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Programa" Width="1.5" PointX="5.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Recibo" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.TipoUsuario" Width="1.5" PointX="1.5" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGAModel.Usuario" Width="1.5" PointX="3.75" PointY="1.625" IsExpanded="true" />
         <AssociationConnector Association="SIGAModel.FK_Administrador_Usuario" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Alumno_Usuario" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Calificacion_Alumno" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Matricula_Alumno" ManuallyRouted="false" />
+        <AssociationConnector Association="SIGAModel.FK_Recibo_Alumno" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_ProgramacionModulo_Aula" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Calificacion_Curso" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Calificacion_Modulo" ManuallyRouted="false" />
@@ -35,6 +36,7 @@
         <AssociationConnector Association="SIGAModel.FK_Matricula_Curso" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_ModuloCurso_Curso" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Profesor_Curso" ManuallyRouted="false" />
+        <AssociationConnector Association="SIGAModel.FK_Recibo_Curso" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_ProgramacionModulo_Horario" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Matricula_Modulo" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Matricula_Programa" ManuallyRouted="false" />
@@ -43,7 +45,8 @@
         <AssociationConnector Association="SIGAModel.FK_Modulo_ModuloNivel" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_ModuloCurso_Modulo" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_ProgramacionModulo_Modulo" ManuallyRouted="false" />
-        <AssociationConnector Association="SIGAModel.FK_Recibo_Pago" ManuallyRouted="false" />
+        <AssociationConnector Association="SIGAModel.FK_Recibo_Modulo" ManuallyRouted="false" />
+        <AssociationConnector Association="SIGAModel.FK_Pago_Recibo" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Usuario_Persona" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Profesor_Usuario1" ManuallyRouted="false" />
         <AssociationConnector Association="SIGAModel.FK_Usuario_Tipo_Usuario" ManuallyRouted="false" />

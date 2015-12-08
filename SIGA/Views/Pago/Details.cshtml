@@ -1,0 +1,56 @@
+﻿@model SIGA_Model.Pago
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalle <small>Pago</small></h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RecId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PagoFecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PagoFecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PagoDescuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PagoDescuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PagoMonto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PagoMonto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.PagoId }) |
+    @Html.ActionLink("Regresar a la Lista", "Index")
+</p>

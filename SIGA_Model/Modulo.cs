@@ -20,6 +20,7 @@ namespace SIGA_Model
             this.Matricula = new HashSet<Matricula>();
             this.ModuloCurso = new HashSet<ModuloCurso>();
             this.Programa = new HashSet<Programa>();
+            this.Recibo = new HashSet<Recibo>();
         }
     
         public int ModId { get; set; }
@@ -36,5 +37,6 @@ namespace SIGA_Model
         public virtual ModuloNivel ModuloNivel { get; set; }
         public virtual ICollection<ModuloCurso> ModuloCurso { get; set; }
         public virtual ICollection<Programa> Programa { get; set; }
+        public virtual ICollection<Recibo> Recibo { get; set; }
     }
 }

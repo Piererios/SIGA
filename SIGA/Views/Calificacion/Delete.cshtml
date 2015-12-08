@@ -69,12 +69,10 @@
 
         <dt>
             @Html.Raw("Alumno")
-            @*@Html.DisplayNameFor(model => model.Alumno.Alu_Apoderado)*@
         </dt>
 
         <dd>
             @Html.Raw(ViewBag.AlumnoNombre)
-            @*@Html.DisplayFor(model => model.Alumno.Alu_Apoderado)*@
         </dd>
 
         <dt>
@@ -95,12 +93,10 @@
 
         <dt>
             @Html.Raw("Profesor")
-            @*@Html.DisplayNameFor(model => model.Profesor.Prof_Especialidad)*@
         </dt>
 
         <dd>
             @Html.Raw(ViewBag.ProfesorNombre)
-            @*@Html.DisplayFor(model => model.Profesor.Prof_Especialidad)*@
         </dd>
 
     </dl>
@@ -109,7 +105,7 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
             @Html.ActionLink("Back to List", "Index")
         </div>
     }

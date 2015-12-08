@@ -18,6 +18,7 @@ namespace SIGA_Model
         {
             this.Calificacion = new HashSet<Calificacion>();
             this.Matricula = new HashSet<Matricula>();
+            this.Recibo = new HashSet<Recibo>();
         }
     
         public int Alu_Id { get; set; }
@@ -31,5 +32,6 @@ namespace SIGA_Model
         public virtual Usuario Usuario { get; set; }
         public virtual ICollection<Calificacion> Calificacion { get; set; }
         public virtual ICollection<Matricula> Matricula { get; set; }
+        public virtual ICollection<Recibo> Recibo { get; set; }
     }
 }

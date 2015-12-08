@@ -20,3 +20,5 @@
 /// <reference path="siga/modulocurso/modulocurso.js" />
 /// <reference path="jquery-ui-1.11.4.min.js" />
 /// <reference path="siga/matricula/matricula.js" />
+/// <reference path="siga/pago/modulocurso.js" />
+/// <reference path="siga/pago/modulocursodto.js" />

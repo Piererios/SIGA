@@ -13,47 +13,36 @@
     <tr>
         <th>
             @Html.Raw("Fecha Registro")
-            @*@Html.DisplayNameFor(model => model.Cal_Fech)*@
         </th>
         <th>
             @Html.Raw("Nota 1")
-            @*@Html.DisplayNameFor(model => model.Cal_N1)*@
         </th>
         <th>
             @Html.Raw("Nota 2")
-            @*@Html.DisplayNameFor(model => model.Cal_N2)*@
         </th>
         <th>
             @Html.Raw("Nota 3")
-            @*@Html.DisplayNameFor(model => model.Cal_N3)*@
         </th>
         <th>
             @Html.Raw("Nota 4")
-            @*@Html.DisplayNameFor(model => model.Cal_N4)*@
         </th>
         <th>
             @Html.Raw("Nota 5")
-            @*@Html.DisplayNameFor(model => model.Cal_N5)*@
         </th>
         <th>
             @Html.Raw("Nota 6")
-            @*@Html.DisplayNameFor(model => model.Cal_N6)*@
         </th>
         <th>
             @Html.Raw("Alumno")
-            @*@Html.DisplayNameFor(model => model.Alumno.Alu_Apoderado)*@
         </th>
         <th>
             @Html.Raw("Curso")
-            @*@Html.DisplayNameFor(model => model.Curso.CurName)*@
         </th>
         <th>
             @Html.Raw("Modulo")
-            @*@Html.DisplayNameFor(model => model.Modulo.ModNombre)*@
         </th>
         <th>
             @Html.Raw("Profesor")
-            @*@Html.DisplayNameFor(model => model.Profesor.Prof_Especialidad)*@
         </th>
         <th></th>
     </tr>
@@ -103,7 +92,6 @@
         </td>
         <td>
             @Html.Raw(alumnoNombre)
-            @*@Html.DisplayFor(modelItem => item.Alumno.Alu_Apoderado)*@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Curso.CurName)
@@ -113,7 +101,6 @@
         </td>
         <td>
             @Html.Raw(profesorNombre)
-            @*@Html.DisplayFor(modelItem => item.Profesor.Prof_Especialidad)*@
         </td>
         <td>
             @Html.ActionLink("Editar", "Edit", new { id=item.CalifId }) |

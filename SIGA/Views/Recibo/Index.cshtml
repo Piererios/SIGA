@@ -1,0 +1,73 @@
+﻿@model IEnumerable<SIGA_Model.Recibo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<p>
+    @Html.ActionLink("Crear Recibo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.Raw("# Recibo")
+        </th>
+        <th>
+            @Html.Raw("Fecha Registro")
+        </th>
+        <th>
+            @Html.Raw("Descripcion")
+        </th>
+        <th>
+            @Html.Raw("Alumno")
+        </th>
+        <th>
+            @Html.Raw("Curso")
+        </th>
+        <th>
+            @Html.Raw("Modulo")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+
+    SIGA_Model.SIGAEntities db = new SIGA_Model.SIGAEntities();
+
+    string alumnoNombre = (from a in db.Alumno
+                           join u in db.Usuario
+                           on a.User_Id equals u.User_Id
+                           join p in db.Persona
+                           on u.Per_Id equals p.Per_Id
+                           where a.Alu_Id == item.Alumno.Alu_Id
+                           select p.Per_Nombre + " " + p.Per_ApeMaterno).FirstOrDefault().ToString(); 
+    
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaRegistro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.Raw(alumnoNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Curso.CurName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Modulo.ModNombre)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.RecId }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.RecId }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.RecId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -14,15 +14,13 @@ namespace SIGA_Model
     
     public partial class Pago
     {
-        public Pago()
-        {
-            this.Recibo = new HashSet<Recibo>();
-        }
-    
         public int PagoId { get; set; }
+        public int RecId { get; set; }
         public System.DateTime PagoFecha { get; set; }
+        public Nullable<decimal> PagoDescuento { get; set; }
         public decimal PagoMonto { get; set; }
+        public string Descripcion { get; set; }
     
-        public virtual ICollection<Recibo> Recibo { get; set; }
+        public virtual Recibo Recibo { get; set; }
     }
 }

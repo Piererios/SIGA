@@ -110,7 +110,7 @@
             <a href="#pagoMenuCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="pagoMenuCollapse">
                 <i class="fa fa-plus-square-o pull-right plus-collapse"></i>
             </a>
-            <div class="collapse cmenuMainHeaderItems" id="pagoMenuCollapse">
+            <div class="collapse menuMainHeaderItems" id="pagoMenuCollapse">
                 <ul data-bind="foreach: pagoMenuitems">
                     <li>
                         <a data-bind="text: name, click: $root.menuClick"></a>
@@ -135,7 +135,7 @@
 
 <div class="container confirm" style="display:none" data-bind="visible: layoutVM.confirmDialog">
     <div>
-        <div class="row title  layoutVM.popover_title" style="background-color:#05293c">
+        <div class="row title  layoutVM.popover_title">
             <div class="col-xs-12">
                 <span data-bind="text: layoutVM.confirmTitle" class="title" style="font-weight:bold"></span>
             </div>

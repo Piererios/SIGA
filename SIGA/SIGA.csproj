@@ -202,7 +202,9 @@
     <Compile Include="Controllers\CalificacionController.cs" />
     <Compile Include="Controllers\MatriculaController.cs" />
     <Compile Include="Controllers\ModuloCursoController.cs" />
+    <Compile Include="Controllers\PagoController.cs" />
     <Compile Include="Controllers\ProgramacionController.cs" />
+    <Compile Include="Controllers\ReciboController.cs" />
     <Compile Include="Controllers_Api\UsuariodfController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\UsuarioController.cs" />
@@ -315,6 +317,8 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\Siga\Matricula\matricula.js" />
     <Content Include="Scripts\Siga\menu.js" />
+    <Content Include="Scripts\Siga\Pago\modulocurso.js" />
+    <Content Include="Scripts\Siga\Pago\modulocursoDTO.js" />
     <Content Include="Scripts\Siga\Programacion\programacion.js" />
     <Content Include="Scripts\Siga\ModuloCurso\modulocurso.js" />
     <Content Include="Scripts\Siga\ModuloCurso\modulocursoDTO.js" />
@@ -399,6 +403,16 @@
     <Content Include="Views\Calificacion\Details.cshtml" />
     <Content Include="Views\Calificacion\Edit.cshtml" />
     <Content Include="Views\Calificacion\Index.cshtml" />
+    <Content Include="Views\Recibo\Create.cshtml" />
+    <Content Include="Views\Recibo\Delete.cshtml" />
+    <Content Include="Views\Recibo\Details.cshtml" />
+    <Content Include="Views\Recibo\Edit.cshtml" />
+    <Content Include="Views\Recibo\Index.cshtml" />
+    <Content Include="Views\Pago\Create.cshtml" />
+    <Content Include="Views\Pago\Delete.cshtml" />
+    <Content Include="Views\Pago\Details.cshtml" />
+    <Content Include="Views\Pago\Edit.cshtml" />
+    <Content Include="Views\Pago\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

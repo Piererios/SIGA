@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SIGA_Model.Pago>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    @Html.ActionLink("Crear Pago", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PagoFecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagoDescuento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagoMonto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PagoFecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PagoDescuento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PagoMonto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.PagoId }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.PagoId }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.PagoId })
+        </td>
+    </tr>
+}
+
+</table>

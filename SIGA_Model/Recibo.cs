@@ -17,13 +17,20 @@ namespace SIGA_Model
         public Recibo()
         {
             this.Matricula = new HashSet<Matricula>();
+            this.Pago = new HashSet<Pago>();
         }
     
         public int RecId { get; set; }
-        public int User_Id { get; set; }
-        public int PagoId { get; set; }
+        public int Alu_Id { get; set; }
+        public int ModId { get; set; }
+        public int CurId { get; set; }
+        public Nullable<System.DateTime> FechaRegistro { get; set; }
+        public string Descripcion { get; set; }
     
+        public virtual Alumno Alumno { get; set; }
+        public virtual Curso Curso { get; set; }
         public virtual ICollection<Matricula> Matricula { get; set; }
-        public virtual Pago Pago { get; set; }
+        public virtual Modulo Modulo { get; set; }
+        public virtual ICollection<Pago> Pago { get; set; }
     }
 }
