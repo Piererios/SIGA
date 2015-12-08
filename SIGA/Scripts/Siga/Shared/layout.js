@@ -57,8 +57,7 @@ var layoutViewModel = function () {
     ]);
 
     layoutVM.pagoMenuitems = ko.observableArray([
-        { name: 'Compromiso de Pago' },
-        { name: 'Deudas Obtenidas' }
+        { name: 'Registrar Pago' }
     ]);
 
     layoutVM.menuClick = function (data, event) {
@@ -76,6 +75,9 @@ var layoutViewModel = function () {
         }
         else if (data.name == "Calificaciones") {
             location.href = 'http://dev-sigaeducando.com/Calificacion';
+        }
+        else if (data.name == "Registrar Pago") {
+            location.href = 'http://dev-sigaeducando.com/Pago';
         }
     };
     
